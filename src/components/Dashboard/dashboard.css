@@ -1,0 +1,211 @@
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 280px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-header {
+  margin-bottom: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.logo img {
+  width: 32px;
+  height: 32px;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 24px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.stats-card {
+  padding: 16px;
+}
+
+.stats-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.stats-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.trend-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.trend-badge.up {
+  background-color: rgba(5, 193, 104, 0.2);
+  color: #14ca74;
+}
+
+.trend-badge.down {
+  background-color: rgba(255, 90, 101, 0.2);
+  color: #ff5a65;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.visitors-card {
+  padding: 20px;
+}
+
+.visitors-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.visitors-content {
+  text-align: center;
+}
+
+.visitors-stats {
+  margin-top: 24px;
+}
+
+.stat-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.team-progress {
+  padding: 20px;
+}
+
+.team-members {
+  margin-top: 24px;
+}
+
+.team-member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.member-info {
+  flex: 1;
+}
+
+.member-progress {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 2;
+  width: auto;
+  text-align: right;
+}
+
+.member-progress .Polaris-ProgressBar {
+  flex: 1;
+}
+
+.member-progress span {
+  min-width: 40px;
+  text-align: right;
+}
+
+.orders-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 16px;
+}
+
+.customer-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.sidebar a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.sidebar a:hover {
+  color: #008060;
+  transform: translateX(4px);
+}
+
+@media (max-width: 991px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
