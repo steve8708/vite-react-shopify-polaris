@@ -7,7 +7,7 @@
 .sidebar {
   width: 280px;
   /* background-color: #081028; */
-  border-right: 1px solid #0b1739;
+
   padding: 24px;
   display: flex;
   flex-direction: column;
